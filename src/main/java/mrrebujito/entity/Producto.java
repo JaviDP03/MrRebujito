@@ -10,7 +10,7 @@ public class Producto extends DomainEntity {
 	@NotBlank
 	private String nombreProducto;
 
-	@Pattern(regexp = "'COMIDA' | 'BEBIDA'")
+	@Pattern(regexp = "BEBIDA|COMIDA")
 	private String tipoProducto;
 
 	@Min(0)
@@ -43,5 +43,4 @@ public class Producto extends DomainEntity {
 	public void setPrecioProducto(double precioProducto) {
 		this.precioProducto = precioProducto;
 	}
-
 }
